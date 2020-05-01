@@ -20,12 +20,14 @@
 <body>
      <script>
         jQuery(document).ready(function name() {
-            let prompting = prompt("Are You Old enough? or Are you young enough");
+            let prompting = prompt("Are You Old enough? or Are you young enough
+                                   18-30");
             if ((prompting >= 18) && (prompting <= 30)) {
-                let background = prompt(`what bootstrap color do you want for the background`);
+                let background = prompt(`whatBootstrapColorDoYouWantForTheBackground?
+optionsAre:warning,info,primary,secondary and danger`);
                 $('.head').text(`i am ${prompting} years`);
                 $('body').addClass(`bg-${background}`);
-                let heading = prompt(`what would you like the heading of this page to be?`);
+                let heading = prompt(`whatWouldYouLikeTheHeadingOfThisPageToBe?`);
                 $('#heading').text(`${heading}`);
                 alert `justTheColorRemainingKeepCalm`;
                 let headingColor = prompt(`color?`);
