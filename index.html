@@ -1,31 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-  
-  <!--  Meta  -->
-  <meta charset="UTF-8" />
-  <title>My New Pen!</title>
-  
-  <!--  Styles  -->
-  <link rel="stylesheet" href="styles/index.processed.css"><!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css" rel="stylesheet">
-<!-- Optional theme 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">-->
-     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>my Java script play ground</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!--   <link rel='stylesheet' type='text/css' media='screen' href='jstyle.css'>-->
+    <link rel="stylesheet" href="bootstrap-4.1.3\dist\css\bootstrap.min.css">
+    <script src="jquery-3.4.1.slim.min.js"></script>
+    <link rel="stylesheet" href="animate.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="bootstrap-4.1.3\dist\js\bootstrap.min.js"></script>
+    <script src='scripts.js'></script>
 
 </head>
+
 <body>
-     <script>
+    <script>
         jQuery(document).ready(function name() {
-            let prompting = prompt("Are You Old enough? or Are you young enough
-                                   18-30");
+            let prompting = prompt("AreYouOldEnough?OrAreYouYoungEnoughAcceptedAgeRangeIs18-30");
             if ((prompting >= 18) && (prompting <= 30)) {
-                let background = prompt(`whatBootstrapColorDoYouWantForTheBackground?
-optionsAre:warning,info,primary,secondary and danger`);
-                $('.head').text(`So you're ${prompting} years? that'll do i guess`);
+                let background = prompt(`whatBootstrapColorDoYouWantForTheBackgroundTheColorsAre warning info primary secodary danger and success`);
+                $('.head').text(`i am ${prompting} years`);
                 $('body').addClass(`bg-${background}`);
                 let heading = prompt(`whatWouldYouLikeTheHeadingOfThisPageToBe?`);
                 $('#heading').text(`${heading}`);
@@ -72,6 +69,42 @@ optionsAre:warning,info,primary,secondary and danger`);
         <p class="pTwo ">he went down fighting castle long jon thieves, who was a bad bad man,</p>
     </article>
     <button class="btn btn-dark bg-dark ">addClass</button>
-   
-</body>
+    <button class="btn">addClass</button></body>
+<!--  
+    the jQuery attribut Function 
+    <script>
+        jQuery(document).ready(function name() {
+            $('.button').click(function name() {
+                $('img').attr("width ", function(n, v) {
+
+                    return v - 50;
+
+                })
+
+            })
+        })
+    </script>-->
+<!-- to return an attribute value
+        <script> 
+        jQuery(document).ready(function name(params) {
+            $('.button').click(function name(params) {
+                alert("width " + ($('img').attr("width ")) + "height " + ($('img').attr("height ")));
+
+            })
+        })
+    </script>-->
+<!--
+        to set multiple attribute values
+         <script>
+        jQuery(document).ready(function name(params) {
+            $('.button').click(function name(params) {
+
+                $('img').attr({
+                    width: "300 ",
+                    height: "300 "
+                });
+            });
+        });
+    </script>-->
+
 </html>
