@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <!--  Meta  -->
+  <meta charset="UTF-8" />
+  <title>My New Pen!</title>
+  
+  <!--  Styles  -->
+  <link rel="stylesheet" href="styles/index.processed.css"><!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css" rel="stylesheet">
+<!-- Optional theme 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">-->
+     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</head>
+<body>
+     <script>
+        jQuery(document).ready(function name() {
+            let prompting = prompt("Are You Old enough? or Are you young enough");
+            if ((prompting >= 18) && (prompting <= 30)) {
+                let background = prompt(`what bootstrap color do you want for the background`);
+                $('.head').text(`i am ${prompting} years`);
+                $('body').addClass(`bg-${background}`);
+                let heading = prompt(`what would you like the heading of this page to be?`);
+                $('#heading').text(`${heading}`);
+                alert `justTheColorRemainingKeepCalm`;
+                let headingColor = prompt(`color?`);
+                $('#heading').css(`color`, `${headingColor}`);
+            } else {
+                $("body").addClass("animated hinge");
+            }
+            $("#button").dblclick(() => {
+                let data = $("#heading").text("Minky has changed");
+
+            })
+
+            $('#button').click(() => {
+                let data2 = $("#heading").html("<h2> minky is the highest </h2> <h3> minky is smaller</h3>");
+
+            })
+            $('.button').click(() => {
+                let click1 = $('.pOne').toggleClass("bg-secondary animated shake");
+                let click2 = $('.pTwo').toggleClass("bg-secondary animated shake");
+            })
+            $('.button').dblclick(() => {
+                let click1 = $('.pOne').toggleClass("bg-warning animated shake");
+                let click2 = $('.pTwo').togggleClass("bg-warning animated shake");
+            })
+            $('.btn').click(() => {
+                let ppt = prompt("what is your favourite color");
+                $('.pOne').addClass(`${ppt}`);
+
+            });
+
+
+        })
+    </script>
+
+    <h1 id="heading">minky should be in Aclonica</h1>
+    <h1 class="head">this is the heading</h1>
+    <button id="button">Test Button</button>
+    <img src="background.pg" width="500" height="500" alt=" na one fine picture suppose dey here o">
+    <h3>this is the main heading</h3>
+    <article>
+        <p class="pOne ">today in big brothers house, we talk about sir peekoms, who was a mink and died a heroes death</p>
+        <p class="pTwo ">he went down fighting castle long jon thieves, who was a bad bad man,</p>
+    </article>
+    <button class="btn btn-dark bg-dark ">addClass</button>
+   
+</body>
+</html>
